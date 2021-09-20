@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,551</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test1</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">3,577</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SeleniumAuto.MarutiCar</td><td><a href="#m0">openUrl</a></td><td rowspan="1">1631240036127</td><td rowspan="1">3483</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SeleniumAuto.MarutiCar</td><td><a href="#m1">servise</a></td><td rowspan="1">1631240039632</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">welcome</a></td><td rowspan="1">1631240039637</td><td rowspan="1">3</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SeleniumAuto.AudiCar</td><td><a href="#m3">catlog</a></td><td rowspan="1">1631240039716</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">servise</a></td><td rowspan="1">1631240039721</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="3">SeleniumAuto.ToyotaCar</td><td><a href="#m5">catlog</a></td><td rowspan="1">1631240039703</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m6">servise</a></td><td rowspan="1">1631240039706</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m7">welcome</a></td><td rowspan="1">1631240039709</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">SeleniumAuto.MarutiCar#openUrl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: &apos;4.0.0-alpha-4&apos;, revision: &apos;c2d955b49e&apos;
+System info: host: &apos;DESKTOP-SGDSSG9&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00AD87E3+2852835]
+	Ordinal0 [0x009C5BB1+1727409]
+	Ordinal0 [0x0089E4B9+517305]
+	Ordinal0 [0x0082CA98+51864]
+	Ordinal0 [0x0084D9F7+186871]
+	Ordinal0 [0x0084D7FD+186365]
+	Ordinal0 [0x0084B70B+177931]
+	Ordinal0 [0x00832584+75140]
+	Ordinal0 [0x00833650+79440]
+	Ordinal0 [0x008335E9+79337]
+	Ordinal0 [0x009DAD5C+1813852]
+	GetHandleVerifier [0x00BFC616+1075574]
+	GetHandleVerifier [0x00BFC367+1074887]
+	GetHandleVerifier [0x00C07497+1120247]
+	GetHandleVerifier [0x00BFCC16+1077110]
+	Ordinal0 [0x009D3206+1782278]
+	Ordinal0 [0x009DC3BB+1819579]
+	Ordinal0 [0x009DC523+1819939]
+	Ordinal0 [0x009F2B45+1911621]
+	BaseThreadInitThunk [0x7613FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776175F4+228]
+	RtlGetAppContainerNamedObjectPath [0x776175C4+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:75)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+	at SeleniumAuto.MarutiCar.openUrl(MarutiCar.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SeleniumAuto.MarutiCar#servise</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SeleniumAuto.MarutiCar#welcome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m3">SeleniumAuto.AudiCar#catlog</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SeleniumAuto.AudiCar#servise</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">SeleniumAuto.ToyotaCar#catlog</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">SeleniumAuto.ToyotaCar#servise</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">SeleniumAuto.ToyotaCar#welcome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
